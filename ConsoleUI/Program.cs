@@ -26,7 +26,7 @@ void CarTest()
 
     foreach (var car in carManager.GetProductDetails())
     {
-        Console.WriteLine(car.Description+" / "+car.ColorName);
+        Console.WriteLine(car.Description+" / "+car.ColorName + " / " +car.BrandName + " / " +car.DailyPrice);
     }
     
 }
