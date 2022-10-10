@@ -1,15 +1,16 @@
 ﻿using System;
+using Core.Utilities.Results;
 using Entities.Concrete;
 
 namespace Business.Abstract
 {
 	public interface IColorService
 	{
-		List<Color> GetAll();
-        Color GetByColorId(int colorId);
-        void Add(Color color);
-        void Delete(Color color);
-        void Update(Color color);
+		IDataResult<List<Color>> GetAll();
+        IDataResult<Color> GetByColorId(int colorId);
+        IResult Add(Color color);
+        IResult Delete(Color color);
+        IResult Update(Color color);
     }
 }
 
