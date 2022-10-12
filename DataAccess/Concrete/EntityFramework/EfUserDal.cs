@@ -5,7 +5,7 @@ using Entities.Concrete;
 
 namespace DataAccess.Concrete.EntityFramework
 {
-	public class EfUserDal : EfEntityRepositoryBase<User, NorthwindContext>, IUserDal
+	public class EfUserDal : EfEntityRepositoryBase<User, CarRentalProjectContext>, IUserDal
     {
 		
 	}

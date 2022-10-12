@@ -5,11 +5,11 @@ namespace Entities.Concrete
 {
 	public class User:IEntity
 	{
-		public int userId { get; set; }
-		public string userFirstName { get; set; }
-		public string userLastName { get; set; }
-		public string userEmail { get; set; }
-		public string userPassword { get; set; }
+		public int UserId { get; set; }
+		public string UserFirstName { get; set; }
+		public string UserLastName { get; set; }
+		public string UserEmail { get; set; }
+		public string UserPassword { get; set; }
 	}
 }
 

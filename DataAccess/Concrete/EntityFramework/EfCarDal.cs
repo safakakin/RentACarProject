@@ -8,11 +8,11 @@ using Microsoft.EntityFrameworkCore;
 
 namespace DataAccess.Concrete.EntityFramework
 {
-    public class EfCarDal : EfEntityRepositoryBase<Car, NorthwindContext>, ICarDal
+    public class EfCarDal : EfEntityRepositoryBase<Car, CarRentalProjectContext>, ICarDal
     {
         public List<CarDetailDto> GetCarDetails()
         {
-            using (NorthwindContext context = new NorthwindContext())
+            using (CarRentalProjectContext context = new CarRentalProjectContext())
             {
                 var result = from c in context.Cars
                              join co in context.Colors

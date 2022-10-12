@@ -4,9 +4,28 @@ using DataAccess.Concrete.EntityFramework;
 using DataAccess.Concrete.InMemory;
 using Entities.Concrete;
 
+
+
+RentalManager rentalManager = new RentalManager(new EfRentalDal());
+var Result=rentalManager.Add(new Rental { RentalId = 1, CarId = 3, CustomerId = 1, ReturnDate = DateTime.Now , RentDate = DateTime.Now });
+
 //ColorTest();
 
-CarTest();
+//CarTest();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 void CarTest()
 {
